@@ -1,0 +1,174 @@
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+@font-face {
+    font-family: YoungSerif;
+    src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: Outfit-regular;
+    src: url("./assets/fonts/outfit/static/Outfit-Regular.ttf");
+}
+
+body {
+    background-color: var(--Eggshell);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: var(--White);
+    /* width: max(300px, 50vw); */
+    width: 700px;
+    padding: 40px;
+    border-radius: 30px;
+
+    font-family: Outfit-regular;
+}
+
+img {
+    background-color: var(--White);
+    /* width: max(300px, 50vw); */
+    width: 700px;
+    border-radius: 15px;
+}
+
+header h1 {
+    font-family: YoungSerif;
+    font-size: 2.2em;
+}
+
+header p {
+    color: var(--DarkCharcoal);
+}
+
+.pink-box {
+    width: 100%;
+    background-color: var(--RoseWhite);
+    margin-top: 35px;
+    border-radius: 10px;
+}
+
+.preparation {
+    margin: 10px;
+    padding: 10px;
+}
+
+.preparation h3 {
+    color: var(--DarkRaspberry);
+    font-size: 1.3em;
+}
+
+.preparation ul li{
+    word-spacing: 5px;
+    margin-top: 10px;
+    text-indent: 20px;
+    color: var(--DarkCharcoal);
+}
+
+hr {
+    color: var(--DarkCharcoal);
+}
+
+.ingredients, .instructions {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.ingredients h2, .instructions h2 {
+    color: var(--Nutmeg);
+    font-size: 1.6em;
+    font-family: YoungSerif;
+    font-weight: 500;
+}
+
+.ingredients ul li{
+    margin-top: 10px;
+    text-indent: 20px;
+    color: var(--DarkCharcoal);
+    max-width: 95%;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.ingredients ul li::marker {
+    color: var(--Nutmeg);
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    max-width: 95%;
+    margin-bottom: 40px;
+}
+
+.steps h2 {
+    color: var(--Nutmeg);
+    font-size: 1.6em;
+    font-family: YoungSerif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.step {
+    display: flex;
+    gap: 10px;
+    margin-bottom: -20px;
+    color: var(--DarkCharcoal);
+}
+
+.step-number {
+    display: flex;
+    font-weight: bold;
+    padding: 0px 20px;
+    color: var(--Nutmeg);
+}
+
+.nutrition {
+    font-family: Outfit-regular;
+}
+
+.nutrition h2 {
+    color: var(--Nutmeg);
+    font-size: 1.6em;
+    font-family: YoungSerif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.nutrition table {
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid var(--LightGrey);
+}
+
+.nutrition table tr:last-child th, 
+.nutrition table tr:last-child td {
+    border-bottom: none;
+}
+
+.nutrition table tr th {
+    text-align: left;
+    padding-left: 40px;
+    width: 50%;
+    font-weight: normal;
+}
+
+.nutrition table tr td {
+    font-weight: 1000;
+    color: var(--Nutmeg);
+}
